@@ -1,4 +1,4 @@
-let obj: { name: string; age?: number } = { name: "james" };
+let obj: { name: string; age?: number } = { name: "James" };
 // obj.name = 7;
 obj.name = "test";
 // obj.last = "bond";

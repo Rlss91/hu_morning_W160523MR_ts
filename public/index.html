@@ -8,5 +8,21 @@
   <body>
     <button id="btn1">click</button>
     <script type="module" src="../src/app.js"></script>
+    <script>
+      function getRandomIntInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
+      }
+
+      let arr = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
+      for (let i = 0; i < arr.length; i++) {
+        let rn = getRandomIntInclusive(0, arr.length - 1);
+        let temp = arr[i];
+        arr[i] = arr[rn];
+        arr[rn] = temp;
+      }
+      console.log("arr", arr);
+    </script>
   </body>
 </html>
